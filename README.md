@@ -42,9 +42,15 @@ Implements 5 distinct regression models evaluated using **5-Fold `GroupKFold` Cr
 ---
 
 ## 📈 Visualizations
-- `model_comparison.png`: Comparison bar chart of RMSE & MAE across all 5 models.
-- `feature_importance.png`: Top 15 environmental features driving lettuce biomass growth.
-- `predicted_vs_actual.png`: Out-of-fold predicted vs actual weight scatter plot for best model (MLP).
+
+### Model Performance Comparison
+![Model Performance Comparison](model_comparison.png)
+
+### Top Environmental Biomass Drivers
+![Feature Importance](feature_importance.png)
+
+### Out-of-Fold Predicted vs Actual Weight (MLP Model)
+![Predicted vs Actual Weight](predicted_vs_actual.png)
 
 ---
 

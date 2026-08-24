@@ -4,7 +4,7 @@ This repository contains an end-to-end Python data mining pipeline executing the
 
 ---
 
-## 📌 Knowledge Discovery in Databases (KDD) Workflow
+## Knowledge Discovery in Databases (KDD) Workflow
 
 ### 1. Data Selection & Preprocessing (`feature/preprocess.py`)
 * **Data Integration**: Integrates 28 growth cases (`CASE_01` to `CASE_28`) containing hourly environmental telemetry (temperature, humidity, CO2, EC, water spray, LED lighting spectrums).
@@ -29,7 +29,7 @@ Implements 5 distinct regression models evaluated using **5-Fold `GroupKFold` Cr
 
 ---
 
-## 📊 Evaluation Summary (`evaluation_summary.csv`)
+## Evaluation Summary (`evaluation_summary.csv`)
 
 | Rank | Model | Out-of-Fold RMSE (g) | Out-of-Fold MAE (g) | $R^2$ Score |
 | :---: | :--- | :---: | :---: | :---: |
@@ -41,7 +41,7 @@ Implements 5 distinct regression models evaluated using **5-Fold `GroupKFold` Cr
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 ### Model Performance Comparison
 ![Model Performance Comparison](model_comparison.png)
@@ -54,19 +54,22 @@ Implements 5 distinct regression models evaluated using **5-Fold `GroupKFold` Cr
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### Requirements
+### Installation & Requirements
 ```bash
-pip install pandas numpy scikit-learn lightgbm matplotlib seaborn scipy joblib
+pip install pandas numpy scikit-learn lightgbm matplotlib seaborn scipy joblib jupyter
 ```
 
-### 1. Execute Preprocessing & Feature Engineering
+### Method A: Interactive Jupyter Notebook (Recommended)
+Open and run [`lettuce_growth_kdd_pipeline.ipynb`](lettuce_growth_kdd_pipeline.ipynb) for a cell-by-cell interactive walkthrough.
+
+### Method B: Standalone Python Scripts
+
 ```bash
+# 1. Execute Preprocessing & Feature Engineering
 python feature/preprocess.py
-```
 
-### 2. Execute Model Training & Evaluation
-```bash
+# 2. Execute Model Training & Evaluation
 python predict_model/train.py
 ```

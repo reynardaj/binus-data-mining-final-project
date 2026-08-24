@@ -1,4 +1,4 @@
-# Lettuce Growth Weight Prediction Pipeline (KDD Data Mining)
+# Lettuce Growth Weight Prediction
 
 This repository contains an end-to-end Python data mining pipeline executing the full **Knowledge Discovery in Databases (KDD)** process (Selection, Preprocessing, Transformation, Data Mining / Modeling, and Interpretation / Evaluation) to predict daily lettuce leaf weight (`predicted_weight_g`) from hourly environmental sensor telemetry across 28-day growth cycles.
 
